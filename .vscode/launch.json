@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: 调试当前文件",
+      "type": "debugpy",
+      "request": "launch",
+      // 调试当前在编辑器中打开的文件
+      "program": "${file}",
+      // 工作目录设为文件所在目录，保证相对路径与同级 import 正常
+      "cwd": "${fileDirname}",
+      "console": "integratedTerminal",
+      // 将 src 目录加入模块搜索路径，支持跨目录 import（如 from 02_xxx import ...）
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+      },
+      "justMyCode": false
+    }
+  ]
+}

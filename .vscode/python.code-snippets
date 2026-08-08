@@ -1,0 +1,10 @@
+{
+  "main 入口": {
+    "prefix": "main",
+    "body": [
+      "if __name__ == \"__main__\":",
+      "\t$0"
+    ],
+    "description": "插入 if __name__ == '__main__' 入口代码块"
+  }
+}
