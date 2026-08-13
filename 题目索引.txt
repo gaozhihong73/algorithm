@@ -28,10 +28,11 @@
     搜索旋转排序数组Ⅱ_81 https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/
     缺失的数字_LCR173 https://leetcode.cn/problems/que-shi-de-shu-zi-lcof/
 前缀和
-    模板_一维前缀和
-    模板_二维前缀和
+    模板_一维前缀和  https://www.nowcoder.com/practice/acead2f4c28c401889915da98ecdc6bf
+    模板_二维前缀和  https://www.nowcoder.com/practice/99eb8040d116414ea3296467ce81cbbc?tpId=230&tqId=38962&ru=/exam/oj
     寻找数组的中心下标_724 https://leetcode.cn/problems/find-pivot-index/
     除了自身以外数组的乘积_238 https://leetcode.cn/problems/product-of-array-except-self/
+    接雨水_42 https://leetcode.cn/problems/trapping-rain-water/description/
     和为k的子数组_560 https://leetcode.cn/problems/subarray-sum-equals-k/
     和可被K整除的子数组_974 https://leetcode.cn/problems/subarray-sums-divisible-by-k/
     连续数组_525 https://leetcode.cn/problems/contiguous-array/
