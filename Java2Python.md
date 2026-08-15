@@ -565,3 +565,77 @@ return "".join(sb)             # 等价于 sb.toString()
 > **总结**：掌握「数组→列表、HashMap→dict、StringBuilder→list+join、栈→list、
 > 队列→deque、for→range、i++→i+=1」这几个核心映射，就能顺畅地把本目录的
 > Java 算法题翻译成 Python 复习了。建议逐题对照翻译，遇到不熟悉的语法随时查阅本文档。
+
+---
+
+## 17. collections 包常用类 (Counter / defaultdict / deque)
+
+Python 的 `collections` 模块提供了多种「增强版」容器，用来替代 Java 中手写循环计数、
+`getOrDefault` 兜底、`ArrayDeque`、`LinkedHashMap` 等繁琐写法，刷题效率极高。
+
+| 功能               | Java 语法                                                       | Python 3 语法                                              |
+| ------------------ | --------------------------------------------------------------- | ---------------------------------------------------------- |
+| **频次统计**       | `map.put(k, map.getOrDefault(k, 0) + 1);`（需手动写循环）       | `from collections import Counter; cnt = Counter(nums)`     |
+| **带默认值字典**   | `map.getOrDefault(k, 0)` / `map.computeIfAbsent(k, f)`          | `from collections import defaultdict; d = defaultdict(int)`|
+| **双端队列**       | `Deque<Integer> q = new ArrayDeque<>();`                        | `from collections import deque; q = deque()`               |
+| **有序字典**       | `LinkedHashMap<K, V>`（LRU 缓存）                               | `from collections import OrderedDict`                      |
+| **具名元组**       | 需单独定义一个简单的 POJO 类                                    | `from collections import namedtuple`                       |
+
+```python
+from collections import Counter, defaultdict, deque, OrderedDict, namedtuple
+
+# ========== 1. Counter：一句话完成频次统计 ==========
+# 等价于 Java 里手动写一整段：
+#   Map<Integer,Integer> map = new HashMap<>();
+#   for (int x : nums) map.put(x, map.getOrDefault(x, 0) + 1);
+nums = [1, 1, 2, 2, 2, 3]
+cnt = Counter(nums)                 # Counter({2: 3, 1: 2, 3: 1})
+
+cnt[5]                              # 不存在的 key 返回 0（普通 dict 会抛 KeyError）
+cnt[1] += 1                         # 直接更新频次，1 变为 3
+
+cnt.most_common(2)                  # 取出现次数最多的 2 个：[(2, 3), (1, 3)]，Top K 题首选
+
+# 统计字符串中每个字符出现次数：等价于 Java 遍历 s.toCharArray() 计数
+char_cnt = Counter("abracadabra")   # Counter({'a': 5, 'b': 2, 'r': 2, 'c': 1, 'd': 1})
+
+# ========== 2. defaultdict：访问缺失的 key 自动给出默认值 ==========
+d = defaultdict(int)                # 默认值 0，计数类题目连 get 都省了
+d["apple"] += 1                     # 直接自增，无需先判断 key 是否存在
+
+d2 = defaultdict(list)              # 默认值 []，「分组」类题目（如异位词分组）神器
+d2["eat"].append("tea")             # 无需先手动 d2["eat"] = [] 初始化
+
+# ========== 3. deque：双端队列（BFS / 滑动窗口单调队列） ==========
+q = deque([1, 2, 3, 4, 5])
+q.append(6)                         # 右侧入队，等价于 addLast
+q.appendleft(0)                     # 左侧入队，等价于 addFirst
+first = q.popleft()                 # 左侧出队，O(1)，等价于 pollFirst
+# 注意：经过上面操作后 q 为 deque([1, 2, 3, 4, 5, 6])
+
+# rotate：整体旋转，旋转数组类题目可借助它思考
+q2 = deque([1, 2, 3, 4, 5])
+q2.rotate(1)                        # 右移一位：deque([5, 1, 2, 3, 4])
+q2.rotate(-1)                       # 左移一位：变回 deque([1, 2, 3, 4, 5])
+
+# ========== 4. OrderedDict：保持插入顺序的字典（LRU 缓存题） ==========
+od = OrderedDict()
+od["a"] = 1
+od["b"] = 2
+for k in od:                        # 遍历顺序 = 插入顺序，等价于 LinkedHashMap
+    print(k)
+od.move_to_end("a")                 # 把 "a" 移到末尾（LRU 题核心操作）
+old = od.popitem(last=False)        # 弹出最早插入的键值对（等价于淘汰最久未使用）
+
+# ========== 5. namedtuple：轻量级「类」，替代简单的 POJO ==========
+Point = namedtuple("Point", ["x", "y"])
+p = Point(3, 4)
+p.x                                 # 属性访问，等价于 point.x
+p[0]                                # 也支持下标访问，等价于 point[0]
+```
+
+> **提示**：
+> - `Counter` 是 `dict` 的子类，`items()` / `keys()` / `values()`、`in` 判断等用法与普通字典完全一致。
+> - Python 3.7+ 普通 `dict` 本身已保持插入顺序，日常无需 `OrderedDict`，只在需要
+>   `move_to_end` / `popitem(last=False)` 的 LRU 缓存题里才用到。
+> - `deque` 的常规入队出队用法详见第 5 节。

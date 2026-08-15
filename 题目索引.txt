@@ -16,6 +16,7 @@
     找到字符串中所有字母异位词_438 https://leetcode.cn/problems/find-all-anagrams-in-a-string/
     串联所有单词的子串_30 https://leetcode.cn/problems/substring-with-concatenation-of-all-words/
     最小覆盖子串_76  https://leetcode.cn/problems/minimum-window-substring/
+    乘积小于 K 的子数组_713 https://leetcode.cn/problems/subarray-product-less-than-k/
 二分查找
     二分查找_704 https://leetcode.cn/problems/binary-search/
     在排序数组中查找元素的第一个和最后一个位置_34 https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/
@@ -34,6 +35,7 @@
     除了自身以外数组的乘积_238 https://leetcode.cn/problems/product-of-array-except-self/
     接雨水_42 https://leetcode.cn/problems/trapping-rain-water/description/
     和为k的子数组_560 https://leetcode.cn/problems/subarray-sum-equals-k/
+    连续的子数组和_523 https://leetcode.cn/problems/continuous-subarray-sum/
     和可被K整除的子数组_974 https://leetcode.cn/problems/subarray-sums-divisible-by-k/
     连续数组_525 https://leetcode.cn/problems/contiguous-array/
 位运算
