@@ -22,6 +22,8 @@
     1423_可获得的最大点数 https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards/description/
     1052_爱生气的书店老板 https://leetcode.cn/problems/grumpy-bookstore-owner/
     3679_使库存平衡的最少丢弃次数 https://leetcode.cn/problems/minimum-discards-to-balance-inventory/
+    3439_重新安排会议得到最多空余时间I https://leetcode.cn/problems/reschedule-meetings-for-maximum-free-time-i/description/
+    1652_拆炸弹 https://leetcode.cn/problems/defuse-the-bomb/description/
 二分查找
     二分查找_704 https://leetcode.cn/problems/binary-search/
     在排序数组中查找元素的第一个和最后一个位置_34 https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/
