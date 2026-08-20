@@ -24,6 +24,9 @@
     3679_使库存平衡的最少丢弃次数 https://leetcode.cn/problems/minimum-discards-to-balance-inventory/
     3439_重新安排会议得到最多空余时间I https://leetcode.cn/problems/reschedule-meetings-for-maximum-free-time-i/description/
     1652_拆炸弹 https://leetcode.cn/problems/defuse-the-bomb/description/
+    3090_每个字符最多出现两次的最长子字符串 https://leetcode.cn/problems/maximum-length-substring-with-two-occurrences/
+    1493_删掉一个元素以后全为 1 的最长子数组 https://leetcode.cn/problems/longest-subarray-of-1s-after-deleting-one-element/
+    3634_使数组平衡的最少移除数目 https://leetcode.cn/problems/minimum-removals-to-balance-array/description/
 二分查找
     二分查找_704 https://leetcode.cn/problems/binary-search/
     在排序数组中查找元素的第一个和最后一个位置_34 https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/
@@ -47,6 +50,9 @@
     使数组能被p整除_1590 https://leetcode.cn/problems/make-sum-divisible-by-p/
     长度可被 K 整除的子数组的最大元素和_3381 https://chat.deepseek.com/a/chat/s/aeec1e0b-e833-4019-8a4d-e94192fa2762
     连续数组_525 https://leetcode.cn/problems/contiguous-array/
+枚举：
+    **两个值之间的最小绝对差值** [🔗](https://leetcode.cn/problems/minimum-absolute-difference-between-two-values/)
+    **数位和相等数对的最大和** [🔗](https://leetcode.cn/problems/max-sum-of-a-pair-with-equal-sum-of-digits/)
 位运算
     位1的个数_191 https://leetcode.cn/problems/number-of-1-bits/
     比特位计数_338 https://leetcode.cn/problems/counting-bits/
