@@ -53,6 +53,8 @@
 枚举：
     **两个值之间的最小绝对差值** [🔗](https://leetcode.cn/problems/minimum-absolute-difference-between-two-values/)
     **数位和相等数对的最大和** [🔗](https://leetcode.cn/problems/max-sum-of-a-pair-with-equal-sum-of-digits/)
+    **2001_可互换矩形的组数** [🔗](https://leetcode.cn/problems/number-of-pairs-of-interchangeable-rectangles/)
+    **2364_统计坏数对的数目** [🔗](https://leetcode.cn/problems/count-number-of-bad-pairs/)
 位运算
     位1的个数_191 https://leetcode.cn/problems/number-of-1-bits/
     比特位计数_338 https://leetcode.cn/problems/counting-bits/
