@@ -51,10 +51,17 @@
     长度可被 K 整除的子数组的最大元素和_3381 https://chat.deepseek.com/a/chat/s/aeec1e0b-e833-4019-8a4d-e94192fa2762
     连续数组_525 https://leetcode.cn/problems/contiguous-array/
 枚举：
-    **两个值之间的最小绝对差值** [🔗](https://leetcode.cn/problems/minimum-absolute-difference-between-two-values/)
-    **数位和相等数对的最大和** [🔗](https://leetcode.cn/problems/max-sum-of-a-pair-with-equal-sum-of-digits/)
-    **2001_可互换矩形的组数** [🔗](https://leetcode.cn/problems/number-of-pairs-of-interchangeable-rectangles/)
-    **2364_统计坏数对的数目** [🔗](https://leetcode.cn/problems/count-number-of-bad-pairs/)
+    枚举左维护右
+        **两个值之间的最小绝对差值** [🔗](https://leetcode.cn/problems/minimum-absolute-difference-between-two-values/)
+        **数位和相等数对的最大和** [🔗](https://leetcode.cn/problems/max-sum-of-a-pair-with-equal-sum-of-digits/)
+        **2001_可互换矩形的组数** [🔗](https://leetcode.cn/problems/number-of-pairs-of-interchangeable-rectangles/)
+        **2364_统计坏数对的数目** [🔗](https://leetcode.cn/problems/count-number-of-bad-pairs/)
+        **3805_统计凯撒加密对数目** [🔗](https://leetcode.cn/problems/count-caesar-cipher-pairs/)
+        **1814_统计一个数组中好对子的数目** [🔗](https://leetcode.cn/problems/count-nice-pairs-in-an-array/)
+    枚举中间
+        **3583_统计特殊三元组** [🔗](https://leetcode.cn/problems/count-special-triplets/)
+        **1930_长度为3的不同回文子序列** [🔗](https://leetcode.cn/problems/unique-length-3-palindromic-subsequences/)
+        **3128_直角三角形** [🔗](https://leetcode.cn/problems/right-triangles/)
 位运算
     位1的个数_191 https://leetcode.cn/problems/number-of-1-bits/
     比特位计数_338 https://leetcode.cn/problems/counting-bits/
