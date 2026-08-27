@@ -68,9 +68,9 @@
     汉明距离_461 https://leetcode.cn/problems/hamming-distance/
     只出现一次的数字_136 https://leetcode.cn/problems/single-number/
     只出现一次的数字Ⅲ_260 https://leetcode.cn/problems/single-number-iii/
-    判断字符是否唯一_面试题01
+    判断字符是否唯一_面试题01 
     丢失的数字_268 https://leetcode.cn/problems/missing-number/
-    两整数之和_371 https://leetcode.cn/problems/sum-of-two-integers/
+    两整数之和_371 https://leetcode.cn/problems/sum-of-two-integers/  (Python麻烦，用Java做)
     只出现一次的数字Ⅱ_137 https://leetcode.cn/problems/single-number-ii/
     消失的两个数字_面试17_19 https://leetcode.cn/problems/remove-nth-node-from-end-of-list/
 模拟
@@ -113,7 +113,6 @@
     基本计算器_227 https://leetcode.cn/problems/basic-calculator-ii/
     字符串解码_394 https://leetcode.cn/problems/decode-string/
     验证栈序列_946 https://leetcode.cn/problems/validate-stack-sequences/
-
 动态规划
     斐波那契数列模型
         第N个泰波那契数_1137 https://leetcode.cn/problems/n-th-tribonacci-number/
