@@ -84,7 +84,7 @@
         颜色分类_75 https://leetcode.cn/problems/sort-colors/
         排序数组_912 https://leetcode.cn/problems/sort-an-array/
         数组中的第K个最大元素_215 https://leetcode.cn/problems/kth-largest-element-in-an-array/
-        最小K个数_面试题17_14 https://leetcode.cn/problems/longest-common-prefix/
+        最小K个数_面试题17_14 https://leetcode.cn/problems/smallest-k-lcci/
     归并
         排序数组_912 https://leetcode.cn/problems/sort-an-array/
         交易逆序对总数_LCR170 https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/
