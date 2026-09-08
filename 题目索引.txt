@@ -108,6 +108,13 @@
     二进制求和_67 https://leetcode.cn/problems/add-binary/
     字符串相乘_43 https://leetcode.cn/problems/multiply-strings/
 栈
+    **1441_用栈操作构建数组** [🔗](https://leetcode.cn/problems/build-an-array-with-stack-operations/)
+    **844_比较含退格的字符串** [🔗](https://leetcode.cn/problems/backspace-string-compare/)
+    **1472_设计浏览器历史记录** [🔗](https://leetcode.cn/problems/design-browser-history/)
+    **946_验证栈序列** [🔗](https://leetcode.cn/problems/validate-stack-sequences/)
+    **3412_计算字符串的镜像分数** [🔗](https://leetcode.cn/problems/find-mirror-score-of-a-string/)
+    **71_简化路径** [🔗](https://leetcode.cn/problems/simplify-path/)
+    **3170_删除星号以后字典序最小的字符串** [🔗](https://leetcode.cn/problems/lexicographically-minimum-string-after-removing-stars/)
     删除字符串中的所有相邻重复项_1047 https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/
     比较含退格的字符串_844 https://leetcode.cn/problems/backspace-string-compare/
     基本计算器_227 https://leetcode.cn/problems/basic-calculator-ii/

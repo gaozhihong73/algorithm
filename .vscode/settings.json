@@ -1,6 +1,7 @@
 {
   "python.analysis.extraPaths": [
     "${workspaceFolder}/src",
-    "${workspaceFolder}/src/00_数据结构/LinkList"
+    "${workspaceFolder}/src/00_数据结构/LinkList",
+    "${workspaceFolder}/src/00_数据结构/Tree"
   ]
 }

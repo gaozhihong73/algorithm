@@ -17,7 +17,7 @@ class LinkedListUtils:
     """链表辅助工具类：负责数组与链表的相互转换及可视化打印"""
 
     @staticmethod
-    def from_list_nhead(vals: List[int]) -> Optional[ListNode]:
+    def from_list(vals: List[int], is_head=True) -> Optional[ListNode]:
         """根据 Python 列表构建单链表，返回头节点"""
         if not vals:
             return None
@@ -27,20 +27,7 @@ class LinkedListUtils:
         for val in vals:
             curr.next = ListNode(val)
             curr = curr.next
-        return dummy.next
-
-    @staticmethod
-    def from_list_head(vals: List[int]) -> Optional[ListNode]:
-        """根据 Python 列表构建单链表，返回头节点"""
-        if not vals:
-            return None
-
-        dummy = ListNode(0)  # 虚拟头节点，简化构建逻辑
-        curr = dummy
-        for val in vals:
-            curr.next = ListNode(val)
-            curr = curr.next
-        return dummy
+        return dummy if is_head else dummy.next
 
     @staticmethod
     def to_list(head: Optional[ListNode]) -> List[int]:
@@ -51,6 +38,15 @@ class LinkedListUtils:
             result.append(curr.val)
             curr = curr.next
         return result
+
+    def get_len(head: Optional[ListNode]) -> int:
+        """获取链表的长度"""
+        count = 0
+        p = head
+        while p is not None:
+            count += 1
+            p = p.next
+        return count
 
     @staticmethod
     def print_list(head: Optional[ListNode], is_head=True) -> None:
