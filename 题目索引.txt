@@ -118,6 +118,8 @@
     **2696_删除子串后的字符串最小长度** [🔗](https://leetcode.cn/problems/minimum-string-length-after-removing-substrings/)
     **1003_检查替换后的词是否有效** [🔗](https://leetcode.cn/problems/check-if-word-is-valid-after-substitutions/)
     **2216_美化数组的最少删除数** [🔗](https://leetcode.cn/problems/minimum-deletions-to-make-array-beautiful/)
+    **1190_反转每对括号间的子串** [🔗](https://leetcode.cn/problems/reverse-substrings-between-each-pair-of-parentheses/)
+    **856_括号的分数** [🔗](https://leetcode.cn/problems/score-of-parentheses/)
     删除字符串中的所有相邻重复项_1047 https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/
     比较含退格的字符串_844 https://leetcode.cn/problems/backspace-string-compare/
     基本计算器_227 https://leetcode.cn/problems/basic-calculator-ii/
